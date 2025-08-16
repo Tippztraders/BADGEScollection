@@ -1,0 +1,23 @@
+/* Number 6, html, css. Text will scroll continuously */
+
+    .scrolling-container {
+      width: 100%;
+      overflow: hidden; /* Hides overflowing text */
+      white-space: nowrap; /* Prevents text from wrapping */
+    }
+
+    .scrolling-text {
+      display: inline-block; /* Allows transformation */
+      animation: scrollText 10s linear infinite; /* Apply animation */
+    }
+
+    @keyframes scrollText {
+      0% {
+        transform: translateX(100%); /* Start off-screen right */
+      }
+      100% {
+        transform: translateX(-100%); /* End off-screen left */
+      }
+    }
+
+/* end of Number 6, html, css. Text will scroll continuously */
